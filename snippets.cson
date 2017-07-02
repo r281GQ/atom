@@ -1,0 +1,184 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.html':
+  'div':
+    'prefix':'div'
+    'body': '<div></div>'
+
+'.source.js':
+  'require':
+    'prefix': 'req'
+    'body': 'const $1 = require();'
+
+  'react-functional-component':
+    'prefix': 'rfc'
+    'body': """
+            import React from 'react';
+
+            const $1 = () => {
+              return (
+
+              );
+            }
+
+
+            export default $1;
+    """
+
+  'react-redux-form-component':
+       'prefix':  'rdf'
+       'body':   """
+              import React, { Component } from 'react';
+              import { connect } from 'react-redux';
+              import { reduxForm, Field } from 'redux-form';
+
+              class $1 extends Component {
+
+                componentWillMount() {
+
+                }
+
+                componentDidMount() {
+
+                }
+
+                componentWillReceiveProps(nextProps) {
+
+                }
+
+                shouldComponentUpdate(nextProps, nextState) {
+
+                }
+
+                componentWillUpdate(nextProps, nextState) {
+
+                }
+
+                componentDidUpdate(prevProps, prevState) {
+
+                }
+
+                constructor(props) {
+                  super(props)
+
+                  this.state = {};
+                }
+
+                render() {
+                  return (
+
+                  );
+                }
+              }
+
+              const mapStateToProps = state => {
+                return {
+
+                };
+              }
+
+              const mapDispatchToProps = dispatch => {
+                return {
+
+                };
+              }
+
+              export default connect(mapStateToProps, mapDispatchToProps)(
+                reduxForm({ form: "" })(
+                  $1
+                )
+              );
+      """
+
+
+  'react-redux-component':
+    'prefix': 'rdc'
+    'body': """
+            import React, { Component } from 'react';
+            import { connect } from 'react-redux';
+
+            class $1 extends Component {
+              render() {
+                return (
+
+                );
+              }
+            }
+
+            const mapStateToProps = state => {
+              return {
+
+              };
+            }
+
+            const mapDispatchToProps = dispatch => {
+              return {
+
+              };
+            }
+
+            export default connect(mapStateToProps, mapDispatchToProps)($1);
+
+    """
+  'react-class-component':
+    'prefix': 'rcc'
+    'body': """
+            import React, { Component } from 'react';
+
+            class $1 extends Component {
+              render() {
+                return (
+
+                );
+              }
+            }
+
+            export default $1;
+
+    """
+  'div':
+    'prefix':'div'
+    'body': '<div></div>'
+  'thunk':
+    'prefix': 'thunk'
+    'body': """
+          const $1 = ($2) => {
+            return (dispatch, getState) => {
+              let config = {
+                url: "http://localhost:2000/",
+                method: "",
+                headers: {
+                  'x-auth': getState().auth.token
+                }
+              };
+
+              axios(config)
+                .then(response => {
+
+                })
+                .catch(error => {
+
+                });
+            };
+          };
+    """
