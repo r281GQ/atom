@@ -1,12 +1,37 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "defcdf48-68a0-4c97-ae09-b647ee2e5fb7"
   core:
+    disabledPackages: [
+      "react"
+    ]
     telemetryConsent: "limited"
   editor:
-    fontSize: 24
+    fontSize: 13
   "exception-reporting":
     userId: "7c2a18ee-d4cb-44d9-afa6-26774dbeca27"
+  "js-hyperclick":
+    extensions: [
+      ".js"
+      ".json"
+      ".node"
+      ".jsx"
+    ]
+  "language-babel": {}
+  "linter-eslint": {}
   "linter-ui-default":
     panelHeight: 69
-  "sync-settings": {}
+    showPanel: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      showInStatusBar: true
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
+  "sync-settings":
+    _lastBackupHash: "3abd1fc90e5bfffa521279db088d49b2e3d3befc"
+    gistId: "f99fb5c59371004195c13ab3bd86df13"
+    personalAccessToken: "618975928b38a41e9b16b03fc44017ecf4070d44"
   welcome:
     showOnStartup: false
