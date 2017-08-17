@@ -2,13 +2,28 @@
   "atom-beautify":
     general:
       _analyticsUserId: "defcdf48-68a0-4c97-ae09-b647ee2e5fb7"
+  "atom-material-ui":
+    colors:
+      paintCursor: true
+    fonts:
+      fontSize: 12
+    tabs: {}
+    ui:
+      panelContrast: true
+      panelShadows: true
+      useAnimations: false
   core:
     disabledPackages: [
       "react"
+      "minimap-autohider"
     ]
     telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
   editor:
-    fontSize: 13
+    fontSize: 17
   "exception-reporting":
     userId: "7c2a18ee-d4cb-44d9-afa6-26774dbeca27"
   "js-hyperclick":
@@ -21,8 +36,15 @@
   "language-babel": {}
   "linter-eslint": {}
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 81
     showPanel: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      "minimap-autohider": true
+      "minimap-autohiderDecorationsZIndex": 0
+  "minimap-plus": {}
   "prettier-atom":
     formatOnSaveOptions:
       showInStatusBar: true
@@ -30,8 +52,8 @@
       singleQuote: true
     useEslint: true
   "sync-settings":
-    _lastBackupHash: "3abd1fc90e5bfffa521279db088d49b2e3d3befc"
+    _lastBackupHash: "2509505e3e3119b239f7d8aed407cb62b91d9bd6"
     gistId: "f99fb5c59371004195c13ab3bd86df13"
-    personalAccessToken: "618975928b38a41e9b16b03fc44017ecf4070d44"
+    personalAccessToken: "8215a318ea88074312f94d5e77baca45ec6b7ef9"
   welcome:
     showOnStartup: false

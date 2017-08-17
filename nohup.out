@@ -1,15 +1,28 @@
+[6742:6776:0817/013450.629359:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+Created new window in existing browser session.
 events.js:160
       throw er; // Unhandled 'error' event
       ^
 
 Error: channel closed
-    at process.target.send (internal/child_process.js:540:16)
+    at process.target.send (internal/child_process.js:548:16)
     at process.<anonymous> (/home/kfbr392/.atom/packages/atom-ternjs/lib/atom-ternjs-server-worker.js:119:11)
     at emitOne (events.js:96:13)
     at process.emit (events.js:188:7)
-    at process._fatalException (bootstrap_node.js:304:26)
-Attempting to call a function in a renderer window that has been closed or released. Function provided here: worker.js:71:22.
-Error: Attempting to call a function in a renderer window that has been closed or released. Function provided here: worker.js:71:22.
-    at WebContents.callIntoRenderer (/opt/atom/resources/electron.asar/browser/rpc-server.js:190:19)
-    at emitOne (events.js:101:20)
-    at WebContents.emit (events.js:188:7)
+    at process._fatalException (bootstrap_node.js:300:26)
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:71:22
+Remote event names: destroyed, crashed
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: channel closed
+    at process.target.send (internal/child_process.js:548:16)
+    at process.<anonymous> (/home/kfbr392/.atom/packages/atom-ternjs/lib/atom-ternjs-server-worker.js:119:11)
+    at emitOne (events.js:96:13)
+    at process.emit (events.js:188:7)
+    at process._fatalException (bootstrap_node.js:300:26)
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:71:22
+Remote event names: destroyed, crashed
